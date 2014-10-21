@@ -1,0 +1,359 @@
+﻿/*
+
+#menu {
+    float:left;
+    width:100%;
+    margin:0px;
+    padding:0px;
+    background-color:#000000;
+}
+
+#menu li {
+    float:left;
+    list-style:none;
+}
+
+#menu li a {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: 100%;
+    float:left;
+}
+
+#menu li a:hover {
+    background-color: #EEEEEE;
+    color: #000000;
+}
+
+.menu_select {
+    width:97%;
+    float:left;
+    display:none;
+    position:relative;
+}
+
+#selectme {
+    width:80%;
+    background-color:#000000;
+    color:#ffffff;
+    padding:10px;
+    font-weight: bold;
+    text-align:left;
+    cursor:pointer;
+    float:left;
+}
+
+ul#options {
+    width:100%;
+    float:left;
+    margin:0px;
+    padding:0px;
+    display:none;
+}
+
+ul#options li {
+    width:98%;
+    float:left;
+
+}
+
+ul#options li a {
+    color: #ffffff;
+    padding:10px;
+    font-weight: bold;
+    text-align:left;
+    text-decoration:none;
+    cursor:pointer;
+    margin-bottom:1px;
+    width:100%;
+    float:left;
+}
+
+ul#options li a:hover {
+    color:#000000;
+    background-color:#EEEEEE;
+    text-decoration: none;
+}
+
+ul#options li:hover {
+
+}
+
+#arrow {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    cursor: pointer;
+}
+
+.down {
+    background-image:url("../images/plus-white.png");
+    background-repeat:no-repeat;
+    height:20px;
+    width:20px;
+}
+
+.up {
+    background-image:url("../images/minus-white.png");
+    background-repeat:no-repeat;
+    height:20px; 
+    width:20px;
+}
+
+@media only screen and (max-width: 980px) {
+nav ul { display: none; }
+nav select { display: inline-block; width:100%; background-color: #000; color:#FFF; font-size: 16px; font-weight: bold; }
+nav .menu_select { display: inline-block; width:100%; background-color: #000; color:#FFF; font-size: 16px; font-weight: bold; }
+}
+
+*/
+
+body {
+    width: 980px;
+    margin: 0 auto;
+}
+
+header {
+    background-color:#DADADA;
+    float: left;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+header h1 {
+	text-align:center;
+}
+
+header nav {
+	width:100%;
+	float:left;
+}
+
+/* MENU */
+#menu {
+	float:left;
+	width:100%;
+	margin:0px;
+	padding:0px;
+	background-color:#000000;
+}
+
+#menu li {
+	float:left;
+	list-style:none;
+}
+
+#menu li a {
+	background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: 100%;
+	float:left;
+}
+
+#menu li a:hover {
+	background-color: #EEEEEE;
+    color: #000000;
+}
+
+.menu_select {
+    width:97%;
+    float:left;
+    display:none;
+    position:relative;
+}
+
+#selectme {
+    width:80%;
+    background-color:#000000;
+    color:#ffffff;
+    padding:10px;
+    font-weight: bold;
+    text-align:left;
+    cursor:pointer;
+    float:left;
+}
+
+ul#options {
+    width:100%;
+    float:left;
+    margin:0px;
+    padding:0px;
+    display:none;
+}
+
+ul#options li {
+    width:98%;
+    float:left;
+    
+}
+
+ul#options li a {
+    color: #ffffff;
+    padding:10px;
+    font-weight: bold;
+    text-align:left;
+	text-decoration:none;
+    cursor:pointer;
+    margin-bottom:1px;
+    width:100%;
+    float:left;
+}
+
+ul#options li a:hover {
+    color:#000000;
+    background-color:#EEEEEE;
+    text-decoration: none;
+}
+
+ul#options li:hover {
+    
+}
+
+#arrow {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    cursor: pointer;
+}
+
+.down {
+    background-image:url("../imagenes/menu.png");
+    background-repeat:no-repeat;
+    height:40px;
+    width:40px;
+}
+
+.up {
+    background-image:url("../imagenes/menu.png");
+    background-repeat:no-repeat;
+    height:20px; 
+    width:20px;
+}
+
+/* END MENU */
+
+.content {
+    width: 100%;
+    float: right;
+    background: #dadada;
+    min-height:150px;
+}
+
+.content p {
+	padding:10px;
+	margin-top:0px;
+}
+
+#sidebar {
+    width: 280px;
+    float: left;
+}
+
+#sidebar .widget {
+    background-color:#DADADA;
+    float: left;
+    min-height: 150px;
+    padding: 10px;
+	margin-bottom:20px;
+    width: 94%;
+}
+
+#sidebar .widget h2 {
+	margin-top:0px;
+}
+
+footer {
+	float:left;
+	width:100%;
+	margin-top:20px;
+    height: 100px;
+    background-color: #dadada;
+}
+
+/*CSS*/
+
+
+/*Mobile portrait (320x480)*/
+@media only screen and (max-width:480px) {
+	body {
+		width:100%;
+	}
+	
+	header {
+		margin-bottom: 10px;
+	}
+	
+	header h1 {
+		font-size:25px;
+	}
+	
+	#sidebar {
+		width:100%;
+	}
+	
+	#sidebar .widget {
+		margin-bottom: 10px;
+		padding: 8px;
+		width: 95%;
+	}
+	
+	.content {
+		width:100%;
+	}
+	
+	footer {
+		margin-bottom: 10px;
+	}
+}
+
+@media only screen and (min-width:480px) and (max-width:767px) {
+	body {
+		width:100%;
+	}
+	
+	#sidebar {
+		width:100%;
+	}
+	
+	#sidebar .widget {
+		margin-bottom: 10px;
+		padding: 9px;
+		width: 96%;
+	}
+	
+	.content {
+		width:100%;
+	}
+}
+
+/*Small tablet landscape (800x600)*/
+@media only screen and (min-width:768px) and (max-width:980px) {
+	body {
+		width:100%;
+	}
+	
+	#sidebar {
+		width:25%;
+	}
+	
+	#sidebar .widget {
+		margin-bottom: 10px;
+		padding: 9px;
+		width: 97%;
+	}
+	
+	.content {
+		width:72%;
+	}
+}
+
+@media only screen and (max-width: 980px) {
+nav ul { display: none; }
+nav select { display: inline-block; width:100%; background-color: #000; color:#FFF; font-size: 16px; font-weight: bold; }
+nav .menu_select { display: inline-block; width:100%; background-color: #000; color:#FFF; font-size: 16px; font-weight: bold; }
+}
+
